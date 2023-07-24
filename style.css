@@ -117,11 +117,12 @@ main{
     width: 23%;
     padding: 30px;
     border-radius: 20px;
+    transition: .3s ease-in;
+
 }
 #offer div:hover{
     background-color: rgb(250, 250, 250);
     box-shadow: 0 7px 10px rgba(207, 207, 207, 0.693);
-    transition: .3s ease-in;
 }
 #offer h4{
     font-size: 20px;
@@ -138,6 +139,9 @@ main{
     gap: 25%;
     margin-bottom: 100px;
 }
+#specializations h2{
+    font-size: 30px;
+}
 
 #specializations p{
     max-width: 55%;
@@ -151,7 +155,7 @@ main{
     justify-content: space-between;
 }
 .spec-divs div{
-    box-shadow: 0 0 10px  rgba(211, 211, 211, 0.811);
+    box-shadow: 0 0 12px  rgba(211, 211, 211, 0.679);
     background-color: white;
     border-radius: 10px;
     width: 23%;
@@ -173,3 +177,24 @@ main{
     margin-bottom: 22px;
     font-size: 20px;
 }
+.services h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.services article{
+    width: 45%;
+    padding-right: 50px;
+    display: inline-block;
+}
+.services article p{
+    font-size: 13px;
+    line-height: 30px;
+}
+.services figure{
+    width: 50%;
+    float: right;
+    border: 1px solid black;
+    height: 300px;
+    vertical-align: top;
+}
+
