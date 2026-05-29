@@ -1,189 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="DevBlock Technologies — building intelligent software for global brands. AI, mobile apps, web platforms, blockchain, and enterprise solutions.">
+    <meta name="keywords" content="DevBlock Technologies, AI development, mobile apps, web development, blockchain, LLM, enterprise software, Lagos">
+    <meta name="author" content="DevBlock Technologies">
+    <meta property="og:title" content="DevBlock Technologies — Intelligent Software Engineering">
+    <meta property="og:description" content="We build AI-powered products, mobile apps, web platforms, and blockchain solutions for companies around the world.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devblocktechnologies.com.ng">
+    <meta property="og:image" content="https://devblocktechnologies.com.ng/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevBlock Technologies — Intelligent Software Engineering">
+    <meta name="twitter:description" content="AI-powered products, mobile apps, web platforms, blockchain solutions.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>DevBlock Technologies — Intelligent Software Engineering</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23167CFA'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='36' fill='white'>DB</text></svg>">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <div class="logo">
-            <img src="" alt="">
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="logo">
+                <svg width="36" height="36" viewBox="0 0 64 64">
+                    <rect width="64" height="64" rx="14" fill="#167CFA"/>
+                    <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="34" fill="white">DB</text>
+                </svg>
+                <span>DevBlock</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <ul class="header-links">
-            <li><a href="">Services <img height="15" width="15"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoUlEQVR4nO2UTQoCMQyFU6/gtAsP6eBusAEP4c9iPGmzeVJlhA62Tn+WfZBNSL6XQAhRV1czGZbRsJyIoMopUJ4xnOUYpA8T9oYFn3CPMhMo37twPHO1gbuVmyCAe9bvIuuuS5G28qQLdhvh3+E0y5zoyzVBDjxiwrGmrXVFJqiB/4OgBTxyHdbd31F90olNTJvJ0ya6LTx8A/XvpKuLMvUCVi7gLj0KuRgAAAAASUVORK5CYII="></a>
-            </li>
-            <li><a href="">Products <img height="15" width="15"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoUlEQVR4nO2UTQoCMQyFU6/gtAsP6eBusAEP4c9iPGmzeVJlhA62Tn+WfZBNSL6XQAhRV1czGZbRsJyIoMopUJ4xnOUYpA8T9oYFn3CPMhMo37twPHO1gbuVmyCAe9bvIuuuS5G28qQLdhvh3+E0y5zoyzVBDjxiwrGmrXVFJqiB/4OgBTxyHdbd31F90olNTJvJ0ya6LTx8A/XvpKuLMvUCVi7gLj0KuRgAAAAASUVORK5CYII="></a>
-            </li>
-            <li><a href="">About us <img height="15" width="15"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoUlEQVR4nO2UTQoCMQyFU6/gtAsP6eBusAEP4c9iPGmzeVJlhA62Tn+WfZBNSL6XQAhRV1czGZbRsJyIoMopUJ4xnOUYpA8T9oYFn3CPMhMo37twPHO1gbuVmyCAe9bvIuuuS5G28qQLdhvh3+E0y5zoyzVBDjxiwrGmrXVFJqiB/4OgBTxyHdbd31F90olNTJvJ0ya6LTx8A/XvpKuLMvUCVi7gLj0KuRgAAAAASUVORK5CYII="></a>
-            </li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </header>
+    </nav>
+
     <main>
-        <section class="landing">
-            <article>
-                <h1>We help global brands develop digital worlds</h1>
-                <p>We specialise in delivering end-to-end services and mobile and web applications for innovation
-                    companies around the world.</p>
-                <div class="cta">
-                    <a href="" class="first">Estimate project</a>
-                    <a href="">Our portfolio</a>
+        <!-- Hero -->
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-badge">AI-Native Software Company</div>
+                <h1>We build intelligent software that moves<br>the world forward</h1>
+                <p>From LLM-powered platforms to blockchain infrastructure, mobile apps to enterprise SaaS — DevBlock Technologies delivers end-to-end engineering for companies that demand excellence.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Start a project</a>
+                    <a href="#products" class="btn-secondary">Explore products</a>
                 </div>
-            </article>
-            <figure>
-                <img src="" alt="">
-            </figure>
-        </section>
-
-        <section class="offer">
-            <h2>Explore what<br>we offer</h2>
-            <div id="offer">
-                <div>
-                    <img src="" alt="">
-                    <h4>Ideation<br>and Strategy</h4>
-                    <p>lorem ewfj wief ief iewo f eojfeoijei eooeln eii</p>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Products built</span></div>
+                    <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years experience</span></div>
+                    <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Engineers</span></div>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h4>Product<br>Design</h4>
-                    <p>lorem ewfj wief ief iewo f eojfeoijei eooeln eii</p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-grid">
+                    <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+                    <div class="grid-cell"></div><div class="grid-cell active"></div><div class="grid-cell"></div>
+                    <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h4>Mobile & Web<br>Development</h4>
-                    <p>lorem ewfj wief ief iewo f eojfeoijei eooeln eii</p>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <h4>Low Code<br>Development</h4>
-                    <p>lorem ewfj wief ief iewo f eojfeoijei eooeln eii</p>
-                </div>
-
+                <div class="hero-orb"></div>
             </div>
         </section>
 
-        <section>
-            <div id="specializations">
-                <h2>
-                    Our industry <br>specialization
-                </h2>
-                <p>
-                    sourceful ICT is an international software and services company, with offices in Poland and The
-                    Netherlands. Our aim-create applications that make an impact for your organization and we help
-                    reducing your cost.
-                </p>
+        <!-- Services -->
+        <section id="services">
+            <div class="section-header">
+                <span class="section-tag">What we do</span>
+                <h2>End-to-end software<br>engineering services</h2>
+                <p>We take ideas from concept to production — design, development, deployment, and beyond.</p>
             </div>
-            <div class="spec-divs">
-                <div>
-                    <img src="" alt="">
-                    <article>
-                        <h5>Transport<br>and Logistics</h5>
-                        <ul>
-                            <li>yard management</li>
-                            <li>fleet management</li>
-                            <li>cost optimization</li>
-                            <li></li>
-                        </ul>
-                    </article>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>AI &amp; LLM Development</h3>
+                    <p>Custom LLM agents, RAG pipelines, fine-tuned models, and AI-powered platforms built on the latest research. We ship production-grade AI systems.</p>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <article>
-                        <h5>Legal-tech<br>and Law industry</h5>
-                        <ul>
-                            <li>smart contract</li>
-                            <li>legal tech solutions</li>
-                            <li>chatbot applications</li>
-                            <li></li>
-                        </ul>
-                    </article>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Web &amp; Mobile Apps</h3>
+                    <p>React, Next.js, React Native, Flutter — we build performant web and mobile applications with beautiful UI and robust backends on Cloudflare Workers, AWS, and GCP.</p>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <article>
-                        <h5>Financial<br>Services</h5>
-                        <ul>
-                            <li>forex trading solutions</li>
-                            <li>blockchain solutions</li>
-                            <li>KYC systems</li>
-                            <li></li>
-                        </ul>
-                    </article>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Blockchain &amp; Web3</h3>
+                    <p>Smart contracts, DeFi platforms, multisig wallets, token systems, and blockchain integrations on Stellar, Ethereum, and Solana. Secure, audited, production-ready.</p>
                 </div>
-
-                <div>
-                    <img src="" alt="">
-                    <article>
-                        <h5>Manufacturing<br>and Industry</h5>
-                        <ul>
-                            <li>production planning</li>
-                            <li>process optimisation</li>
-                            <li>smart mettering</li>
-                            <li>energy management</li>
-                        </ul>
-                    </article>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                    </div>
+                    <h3>Enterprise Platforms</h3>
+                    <p>Billing systems, dashboards, business automation, compliance platforms, and ERP integrations. We architect enterprise software that scales.</p>
                 </div>
-
-            </div>
-        </section>
-
-        <section class="about">
-            <h2>About Us</h2>
-            <article>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, aut! Asperiores omnis corporis consequatur voluptatum iusto expedita sit! Pariatur harum non recusandae enim quam modi officia error voluptatem tempora laborum!</p>
-            </article>
-            <figure>
-                <img src="" alt="">
-            </figure>
-        </section>
-
-        <section class="testimonials">
-            <h2>Testimonials</h2>
-            <div class="test-divs">
-                <div>
-                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero, commodi sed obcaecati nemo modi architecto nulla pariatur perferendis eius odio harum ipsa, est, mo."</p>
-                    <img src="" alt="">
-                    <h5>Henry Barnes<br/><span>Developer Advocate</span></h5>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <p>Cloudflare Workers, AWS Lambda, Docker, Kubernetes, CI/CD pipelines, infrastructure as code. We deploy and maintain resilient cloud-native systems.</p>
                 </div>
-                <div>
-                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero, commodi sed obcaecati nemo modi architecto nulla pariatur perferendis eius odio harum ipsa, est, mo."</p>
-                    <img src="" alt="">
-                    <h5>Janc Nichols<br/><span>Recruiter</span></h5>
-                </div>
-                <div>
-                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero, commodi sed obcaecati nemo modi architecto nulla pariatur perferendis eius odio harum ipsa, est, mo."</p>
-                    <img src="" alt="">
-                    <h5>Frankie Saint<br/><span>CEO</span></h5>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <h3>Product Design</h3>
+                    <p>User research, wireframing, prototyping, design systems, and pixel-perfect UI. We design products people love to use, grounded in Apple HIG and modern design principles.</p>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <figure>
-                <img src="" alt="">
-            </figure>
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Role">
-                <textarea placeholder="Comment"></textarea>
-            </form>
+        <!-- Products -->
+        <section id="products">
+            <div class="section-header">
+                <span class="section-tag">Our products</span>
+                <h2>Platforms we've built<br>and operate</h2>
+            </div>
+            <div class="products-list">
+                <div class="product-item">
+                    <div class="product-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>DevBlock Console</h3>
+                        <p>All-in-one business management platform — invoicing, expense tracking, client portals, and team collaboration. Built for modern service businesses.</p>
+                        <span class="product-tag">SaaS</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>ConverseIQ</h3>
+                        <p>LLM-powered conversational intelligence platform. Intent classification, natural language understanding, and automated business conversations at scale.</p>
+                        <span class="product-tag">AI Platform</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hermes Agent</h3>
+                        <p>Autonomous AI agent framework with skills, memory, cron, and multi-agent orchestration. Open-core platform for building AI-native workflows.</p>
+                        <span class="product-tag">AI Agent Framework</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5l6.74-6.76z"/><line x1="16" y1="8" x2="22" y2="2"/><line x1="17.5" y1="6.5" x2="19.5" y2="4.5"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>PayIQ</h3>
+                        <p>Intelligent payment orchestration platform. Multi-provider payment routing, automated reconciliation, and real-time fraud detection for African markets.</p>
+                        <span class="product-tag">Fintech</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bigglesworth</h3>
+                        <p>AI-powered aviation prospect management. Automated lead qualification, intelligent outreach, and pipeline management for the aviation industry.</p>
+                        <span class="product-tag">Vertical AI</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Industries -->
+        <section id="industries">
+            <div class="section-header">
+                <span class="section-tag">Industries</span>
+                <h2>Deep expertise across<br>high-impact sectors</h2>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Financial Services</h3>
+                    <p>Payment systems, trading platforms, KYC/AML compliance, blockchain-based settlement, and fraud detection systems.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3>Legal &amp; RegTech</h3>
+                    <p>Smart contract platforms, compliance automation, document intelligence, and AI-powered legal research tools.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Logistics &amp; Transport</h3>
+                    <p>Fleet management, yard optimization, route planning, real-time tracking, and supply chain visibility platforms.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Manufacturing</h3>
+                    <p>Production planning, process optimization, smart metering, energy management, and Industry 4.0 solutions.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>Aviation</h3>
+                    <p>Prospect management, fleet analytics, maintenance tracking, and AI-driven operational intelligence for aviation businesses.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Telecom</h3>
+                    <p>OSS/BSS systems, network monitoring, customer analytics, and AI-driven service assurance platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="about-layout">
+                <div class="about-text">
+                    <span class="section-tag">About us</span>
+                    <h2>Engineering the future,<br>from Lagos to the world</h2>
+                    <p>DevBlock Technologies is a software engineering company headquartered in Lagos, Nigeria. We design, build, and operate intelligent software systems for startups, scale-ups, and enterprises across Africa, Europe, and North America.</p>
+                    <p>Our team of 15+ engineers brings deep expertise in AI/ML, cloud infrastructure, blockchain, mobile development, and enterprise architecture. We don't just write code — we build products that create lasting value.</p>
+                    <div class="about-values">
+                        <div class="value">
+                            <h4>Engineering Excellence</h4>
+                            <p>We ship production-grade software with rigorous testing, CI/CD, and observability baked in from day one.</p>
+                        </div>
+                        <div class="value">
+                            <h4>AI-Native Approach</h4>
+                            <p>LLMs, agents, and intelligent automation aren't add-ons — they're core to how we think about every product we build.</p>
+                        </div>
+                        <div class="value">
+                            <h4>Global Reach</h4>
+                            <p>Our clients span 3 continents. We bring world-class engineering standards to every engagement, regardless of location.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>15+ Engineers</h3>
+                        <p>Full-stack, AI, blockchain, mobile, and DevOps specialists working as one integrated team.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>10+ Products</h3>
+                        <p>From AI agent frameworks to fintech platforms, we build products that solve real problems.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#167CFA" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <h3>Happy Clients</h3>
+                        <p>Long-term partnerships across Africa, Europe, and North America. We measure success by client outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <span class="section-tag">Get in touch</span>
+                    <h2>Let's build something<br>great together</h2>
+                    <p>Whether you need a full product built from scratch, an AI system integrated into your existing stack, or a team to augment yours — we'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>ayo@devblocktechnologies.com.ng</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xvgkgwnz" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <input type="text" name="company" placeholder="Company (optional)">
+                    <textarea name="message" placeholder="Tell us about your project..." required rows="5"></textarea>
+                    <button type="submit" class="btn-primary">Send message</button>
+                </form>
+            </div>
+        </section>
     </main>
-</body>
 
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 64 64">
+                        <rect width="64" height="64" rx="14" fill="#167CFA"/>
+                        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700" font-size="34" fill="white">DB</text>
+                    </svg>
+                    <span>DevBlock</span>
+                </a>
+                <p>Building intelligent software for global brands.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#services">AI Development</a>
+                    <a href="#services">Web &amp; Mobile</a>
+                    <a href="#services">Blockchain</a>
+                    <a href="#services">Cloud &amp; DevOps</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <a href="#products">DevBlock Console</a>
+                    <a href="#products">ConverseIQ</a>
+                    <a href="#products">Hermes Agent</a>
+                    <a href="#products">PayIQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://github.com/DEVBLOCK-TECHNOLOGIES-LIMITED" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DevBlock Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu toggle
+        const toggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+
+        // Close mobile menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                toggle.classList.remove('open');
+            });
+        });
+    </script>
+</body>
 </html>
