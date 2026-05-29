@@ -25,7 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <nav id="navbar" aria-label="Main navigation">
         <div class="nav-inner">
             <a href="#hero" class="logo">
                 <svg width="36" height="36" viewBox="0 0 64 64">
@@ -41,18 +42,18 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
-            <button class="mobile-toggle" aria-label="Menu">
+            <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <main>
+    <main id="main-content">
         <!-- Hero -->
-        <section id="hero">
+        <section id="hero" aria-labelledby="hero-heading">
             <div class="hero-content">
                 <div class="hero-badge">AI-Native Software Company</div>
-                <h1>We build intelligent software that moves<br>the world forward</h1>
+                <h1 id="hero-heading">We build intelligent software that moves<br>the world forward</h1>
                 <p>From LLM-powered platforms to blockchain infrastructure, mobile apps to enterprise SaaS — DevBlock Technologies delivers end-to-end engineering for companies that demand excellence.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn-primary">Start a project</a>
@@ -75,10 +76,10 @@
         </section>
 
         <!-- Services -->
-        <section id="services">
+        <section id="services" aria-labelledby="services-heading">
             <div class="section-header">
                 <span class="section-tag">What we do</span>
-                <h2>End-to-end software<br>engineering services</h2>
+                <h2 id="services-heading">End-to-end software<br>engineering services</h2>
                 <p>We take ideas from concept to production — design, development, deployment, and beyond.</p>
             </div>
             <div class="services-grid">
@@ -128,10 +129,10 @@
         </section>
 
         <!-- Products -->
-        <section id="products">
+        <section id="products" aria-labelledby="products-heading">
             <div class="section-header">
                 <span class="section-tag">Our products</span>
-                <h2>Platforms we've built<br>and operate</h2>
+                <h2 id="products-heading">Platforms we've built<br>and operate</h2>
                 <p>Purpose-built platforms for AI, fintech, aviation, and business operations — designed, built, and run by our team.</p>
             </div>
             <div class="products-list">
@@ -189,10 +190,10 @@
         </section>
 
         <!-- Industries -->
-        <section id="industries">
+        <section id="industries" aria-labelledby="industries-heading">
             <div class="section-header">
                 <span class="section-tag">Industries</span>
-                <h2>Deep expertise across<br>high-impact sectors</h2>
+                <h2 id="industries-heading">Deep expertise across<br>high-impact sectors</h2>
             </div>
             <div class="industries-grid">
                 <div class="industry-card">
@@ -241,11 +242,11 @@
         </section>
 
         <!-- About -->
-        <section id="about">
+        <section id="about" aria-labelledby="about-heading">
             <div class="about-layout">
                 <div class="about-text">
                     <span class="section-tag">About us</span>
-                    <h2>Engineering the future,<br>from Lagos to the world</h2>
+                    <h2 id="about-heading">Engineering the future,<br>from Lagos to the world</h2>
                     <p>DevBlock Technologies is a software engineering company headquartered in Lagos, Nigeria. We design, build, and operate intelligent software systems for startups, scale-ups, and enterprises across Africa, Europe, and North America.</p>
                     <p>Our team of 15+ engineers brings deep expertise in AI/ML, cloud infrastructure, blockchain, mobile development, and enterprise architecture. We don't just write code — we build products that create lasting value.</p>
                     <div class="about-values">
@@ -290,11 +291,11 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact">
+        <section id="contact" aria-labelledby="contact-heading">
             <div class="contact-layout">
                 <div class="contact-info">
                     <span class="section-tag">Get in touch</span>
-                    <h2>Let's build something<br>great together</h2>
+                    <h2 id="contact-heading">Let's build something<br>great together</h2>
                     <p>Whether you need a full product built from scratch, an AI system integrated into your existing stack, or a team to augment yours — we'd love to hear from you.</p>
                     <div class="contact-details">
                         <div class="contact-item">
@@ -309,18 +310,18 @@
                 </div>
                 <form class="contact-form" action="https://formspree.io/f/xvgkgwnz" method="POST">
                     <div class="form-row">
-                        <input type="text" name="name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
+                        <input type="text" name="name" placeholder="Your name" required aria-label="Your name">
+                        <input type="email" name="email" placeholder="Your email" required aria-label="Your email">
                     </div>
-                    <input type="text" name="company" placeholder="Company (optional)">
-                    <textarea name="message" placeholder="Tell us about your project..." required rows="5"></textarea>
+                    <input type="text" name="company" placeholder="Company (optional)" aria-label="Company name">
+                    <textarea name="message" placeholder="Tell us about your project..." required rows="5" aria-label="Your message"></textarea>
                     <button type="submit" class="btn-primary">Send message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="#hero" class="logo">
@@ -380,8 +381,9 @@
         const toggle = document.querySelector('.mobile-toggle');
         const navLinks = document.querySelector('.nav-links');
         toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
+            const isOpen = navLinks.classList.toggle('open');
             toggle.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
         });
 
         // Close mobile menu on link click
@@ -389,6 +391,7 @@
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
                 toggle.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
             });
         });
     </script>
