@@ -9,6 +9,16 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: rgba(22, 124, 250, 0.3);
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: rgba(22, 124, 250, 0.3);
+    color: #ffffff;
+}
+
 /* ---- Skip to content ---- */
 .skip-link {
     position: absolute;
